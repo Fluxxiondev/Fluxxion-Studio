@@ -15,12 +15,16 @@
 // src/App.jsx
 import React from "react";
 import TestimonialsCarousel from "./component/TestimonialsCarousel";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
       
       <TestimonialsCarousel />
+      <div style={{width:'100%'}}>
+        <Contact />
+      </div>
     </div>
   );
 }
