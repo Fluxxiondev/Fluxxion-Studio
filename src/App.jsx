@@ -22,7 +22,7 @@ function App() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
       
       <TestimonialsCarousel />
-      <div style={{width:'100%'}}>
+      <div className="w-full">
         <Contact />
       </div>
     </div>

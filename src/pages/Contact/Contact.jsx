@@ -7,19 +7,19 @@ export default function Contact() {
   const [status, setStatus] = useState('idle') // idle | sending | success | error
 
   function validate() {
-    const e = {}
-    if (!form.name.trim()) e.name = 'Please enter your name.'
-    if (!form.email.trim()) e.email = 'Please enter your email.'
-    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email)) e.email = 'Please enter a valid email.'
-    if (!form.message.trim()) e.message = 'Please enter a message.'
-    return e
+    const validationErrors = {}
+    if (!form.name.trim()) validationErrors.name = 'Please enter your name.'
+    if (!form.email.trim()) validationErrors.email = 'Please enter your email.'
+    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email)) validationErrors.email = 'Please enter a valid email.'
+    if (!form.message.trim()) validationErrors.message = 'Please enter a message.'
+    return validationErrors
   }
 
   async function handleSubmit(ev) {
     ev.preventDefault()
-    const e = validate()
-    setErrors(e)
-    if (Object.keys(e).length) return
+    const validationErrors = validate()
+    setErrors(validationErrors)
+    if (Object.keys(validationErrors).length) return
     setStatus('sending')
     // simulate send
     try {
