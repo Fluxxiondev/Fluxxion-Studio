@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" viewBox="0 0 768 768">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1b1538" />
+      <stop offset="1" stop-color="#2d1c54" />
+    </linearGradient>
+    <linearGradient id="cube" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#a855f7" />
+      <stop offset="1" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="tile" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8b5cf6" />
+      <stop offset="1" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+  <rect width="768" height="768" fill="url(#bg)" rx="48" />
+  <g fill="url(#cube)">
+    <rect x="96" y="96" width="120" height="120" rx="32" opacity="0.9" />
+    <rect x="264" y="128" width="140" height="140" rx="40" opacity="0.8" />
+    <rect x="456" y="104" width="164" height="164" rx="48" opacity="0.85" />
+    <rect x="148" y="292" width="128" height="128" rx="36" opacity="0.75" />
+    <rect x="340" y="308" width="176" height="176" rx="48" opacity="0.92" />
+    <rect x="552" y="320" width="120" height="120" rx="32" opacity="0.7" />
+  </g>
+  <g fill="white" opacity="0.85">
+    <path d="M190 140l30 36 48-64" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="334" cy="196" r="36" />
+    <path d="M520 154l52 62-52 62-52-62z" />
+    <path d="M200 344h80v80h-80z" rx="24" />
+    <path d="M396 352a48 48 0 1148 48 48 48 0 01-48-48z" />
+    <path d="M592 356l38 44-38 44-38-44z" />
+  </g>
+  <g fill="url(#tile)" opacity="0.7">
+    <rect x="96" y="504" width="160" height="160" rx="40" />
+    <rect x="296" y="492" width="184" height="184" rx="48" />
+    <rect x="520" y="512" width="152" height="152" rx="44" />
+  </g>
+  <g fill="white" opacity="0.9">
+    <path d="M140 548h80v80h-80z" />
+    <path d="M352 540l56 64-56 64-56-64z" />
+    <circle cx="592" cy="592" r="44" />
+  </g>
+  <text x="96" y="464" fill="#a5b4fc" font-family="'Segoe UI', sans-serif" font-size="54" font-weight="600">React 19 Features</text>
+</svg>
