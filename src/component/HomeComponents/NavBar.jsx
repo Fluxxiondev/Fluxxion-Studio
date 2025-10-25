@@ -69,6 +69,7 @@ const Navbar = () => {
     { name: "Pricing", path: "/pricing" },
     { name: "Careers", path: "/careers" },
     { name: "Contact", path: "/contact" },
+    { name: "Process", path: "/process" },
   ];
 
   const isActivePath = (path) => {
